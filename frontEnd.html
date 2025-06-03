@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>现代软件工程作业</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      :root {
+        --primary-color: #1890ff;
+        --hover-color: #40a9ff;
+        --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", system-ui, sans-serif;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--bg-gradient);
+      }
+
+      /* 主容器 */
+      .container {
+        width: 960px;
+        min-height: 600px;
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+        display: flex;
+        overflow: hidden;
+      }
+
+      .button-group {
+        display: flex;
+        flex-direction: column;
+        gap: 20px; /* 按钮间距 */
+        margin-top: 20px;
+      }
+
+      /* 登录区域 */
+      .login-section {
+        flex: 1;
+        padding: 60px 50px;
+        position: relative;
+      }
+
+      /* 设计说明区域 */
+      .design-notes {
+        flex: 0 0 320px;
+        background: #f8f9fa;
+        padding: 40px 30px;
+        border-left: 1px solid #eee;
+      }
+
+      .logo {
+        text-align: center;
+        margin-bottom: 50px;
+        position: relative;
+      }
+
+      .logo-img {
+        width: 121px; /* 根据实际图片比例调整 */
+        height: 120px;
+        padding: 12px;
+        border-radius: 18px;
+        background: #e6f7ff;
+        object-fit: contain;
+        transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+
+      .logo-img:hover {
+        transform: scale(1.12);
+        filter: drop-shadow(0 5px 15px rgba(24, 144, 255, 0.3));
+      }
+
+      .input-group {
+        margin-bottom: 30px;
+        position: relative;
+      }
+
+      .input-group input {
+        width: 100%;
+        padding: 18px 25px;
+        border: 2px solid #e9ecef;
+        border-radius: 12px;
+        font-size: 16px;
+        transition: all 0.3s;
+        padding-left: 50px;
+      }
+
+      .input-group input:focus {
+        border-color: var(--primary-color);
+        box-shadow: 0 0 15px rgba(24, 144, 255, 0.2);
+      }
+
+      .input-group i {
+        position: absolute;
+        left: 18px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #adb5bd;
+        font-size: 20px;
+        transition: color 0.3s;
+      }
+
+      .input-group input:focus ~ i {
+        color: var(--primary-color);
+      }
+
+      .login-btn {
+        width: 100%;
+        padding: 18px;
+        background: var(--primary-color);
+        color: white;
+        border: none;
+        border-radius: 12px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s;
+        letter-spacing: 1px;
+      }
+
+      .register-btn {
+        width: 100%;
+        padding: 18px;
+        background: #52c41a;
+        color: white;
+        border: 2px solid #52c41a;
+        border-radius: 12px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s;
+        letter-spacing: 1px;
+      }
+
+      .login-btn:hover {
+        background: var(--hover-color);
+        box-shadow: 0 5px 15px rgba(24, 144, 255, 0.3);
+        transform: translateY(-2px);
+      }
+      .register-btn:hover {
+        background: #73d13d;
+        border-color: #73d13d;
+        box-shadow: 0 5px 15px rgba(82, 196, 26, 0.3);
+        transform: translateY(-2px);
+      }
+
+      .login-btn:active,
+      .register-btn:active {
+        transform: translateY(0);
+      }
+
+      .remember-forgot {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 25px 0;
+        color: #666;
+        font-size: 14px;
+      }
+
+      .remember-forgot a {
+        color: #666;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .remember-forgot a:hover {
+        color: var(--primary-color);
+      }
+
+      /* 设计说明样式 */
+      .design-notes h3 {
+        color: var(--primary-color);
+        margin-bottom: 25px;
+        padding-bottom: 15px;
+        border-bottom: 2px solid #dee2e6;
+      }
+
+      .design-notes ul {
+        list-style: none;
+      }
+
+      .design-notes li {
+        margin-bottom: 15px;
+        line-height: 1.6;
+        color: #495057;
+        padding-left: 25px;
+        position: relative;
+        transition: all 0.3s;
+      }
+
+      .design-notes li:hover {
+        transform: translateX(10px);
+      }
+
+      .design-notes li:before {
+        content: "▹";
+        color: var(--primary-color);
+        position: absolute;
+        left: 0;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- 登录区域 -->
+      <div class="login-section">
+        <div class="logo">
+          <img src="images/figure.jpg" alt="系统LOGO" class="logo-img" />
+        </div>
+
+        <div class="input-group">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="用户名 / 邮箱" id="username" />
+        </div>
+
+        <div class="input-group">
+          <i class="fas fa-lock"></i>
+          <input type="password" placeholder="密码" id="password" />
+        </div>
+
+        <div class="remember-forgot">
+          <label> <input type="checkbox" /> 记住我 </label>
+          <a href="#">忘记密码？</a>
+        </div>
+
+        <div class="button-group">
+          <button class="login-btn">登 录</button>
+          <button class="register-btn">注 册</button>
+        </div>
+      </div>
+
+      <!-- 设计说明区域 -->
+      <div class="design-notes">
+        <h3>网页端设计规范</h3>
+        <ul>
+          <li>布局架构：960px标准宽度，采用左右分栏布局</li>
+          <li>色彩系统：主色#1890ff，搭配渐变背景增强层次</li>
+          <li>交互优化：按钮悬停提升+阴影，输入聚焦图标变色</li>
+          <li>间距系统：基于8px倍数规则（24/32/48px）</li>
+          <li>动效设计：所有交互包含0.3s缓动过渡动画</li>
+          <li>图标交互：Logo悬停旋转15度增加趣味性</li>
+          <li>控件规范：输入框圆角12px，按钮圆角12px</li>
+          <li>响应式设计：基础布局适配不同屏幕宽度</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
