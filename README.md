@@ -15,6 +15,7 @@
 3. binding.cpp：Python绑定文件，使用pybind11将C++函数暴露给Python
 4. setup.py：构建脚本，用于编译和安装C++模块
 5. CMakeLists.txt：CMake配置文件，用于构建项目
+6. CalculatorLOGIC1.py：前段代码，用于计算显示
 ### 更新日志
 2025.6.8：更新提交用于测试c++计算的相关程序以及说明  
 2025.6.5：更新提交前段代码  
