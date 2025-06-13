@@ -226,8 +226,3 @@ npm test
 
 本项目采用MIT许可证 - 详见 [LICENSE](LICENSE) 文件
 
-## 📧 联系方式
-
-您的名字 - [@your_twitter](https://twitter.com/your_twitter) - email@example.com
-
-项目链接: [https://github.com/YOUR_USERNAME/high-performance-calculator](https://github.com/YOUR_USERNAME/high-performance-calculator)
