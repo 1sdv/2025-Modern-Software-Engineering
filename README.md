@@ -69,7 +69,7 @@
 │   │   ├── services/       # API服务
 │   │   ├── types/          # 类型定义
 │   │   └── utils/          # 工具函数
-│   ├── package.json        # 依赖项
+│   ├── package-lock.json        # 依赖项
 │   └── tsconfig.json       # TypeScript配置
 ├── test/                   # 测试文件
 │   └── test_calculator.py  # 计算模块测试
