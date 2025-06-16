@@ -20,7 +20,7 @@
 
 <div align="center">
 
-
+[演示](#演示) •
 [特性](#特性) •
 [架构](#架构) •
 [安装](#安装) •
@@ -30,6 +30,10 @@
 [许可证](#许可证)
 
 </div>
+
+## 📊 演示
+
+演示视频链接：[goole云盘](https://drive.google.com/file/d/1R8RNrAlmnqlzII6UriU7cW65FzUQZsHn/view?usp=drive_link) 、[哔哩哔哩](https://www.bilibili.com/video/BV1sgN8zdEfP/?vd_source=ab63bb538290ef80724171e979485615)
 
 
 ## ✨ 特性
