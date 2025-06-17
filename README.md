@@ -33,7 +33,11 @@
 
 ## 📊 演示
 
-演示视频链接：[goole云盘](https://drive.google.com/file/d/1R8RNrAlmnqlzII6UriU7cW65FzUQZsHn/view?usp=drive_link) 、[哔哩哔哩](https://www.bilibili.com/video/BV1sgN8zdEfP/?vd_source=ab63bb538290ef80724171e979485615)
+演示视频链接：[goole云盘](https://drive.google.com/file/d/1R8RNrAlmnqlzII6UriU7cW65FzUQZsHn/view?usp=drive_link) 、[哔哩哔哩](https://www.bilibili.com/video/BV1sgN8zdEfP/?vd_source=ab63bb538290ef80724171e979485615)  
+
+<p align="center">
+  <img src="https://github.com/1sdv/Optimal_LAP_Altitude_for_Maximum_Coverage/blob/main/img/%E6%BC%94%E7%A4%BA.png" alt="应用演示" width="600"/>
+</p>
 
 
 ## ✨ 特性
