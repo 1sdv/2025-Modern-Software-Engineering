@@ -217,17 +217,6 @@ console.log(result); // { slope: 0.6, intercept: 2.2 }
 4. 推送到分支 (`git push origin feature/amazing-feature`)
 5. 打开Pull Request
 
-### 开发环境设置
-
-```bash
-# 安装开发依赖
-pip install -e ".[dev]"
-npm install --save-dev
-
-# 运行测试
-pytest test/
-npm test
-```
 
 ## 📄 许可证
 
