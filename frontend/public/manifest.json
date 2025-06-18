@@ -3,16 +3,19 @@
   "name": "高性能计算器应用",
   "icons": [
     {
+      //.ico 格式图标，适用于各种尺寸，主要用于浏览器标签等位置
       "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
+      // 192x192 尺寸的 PNG 图标，适用于大多数移动设备的主屏幕
       "src": "logo192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
+      // 512x512 尺寸的 PNG 图标，适用于 splash 屏幕、应用商店等需要高分辨率图标的场景
       "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512"
