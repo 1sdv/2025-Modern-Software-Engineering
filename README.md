@@ -39,6 +39,11 @@
   <img src="https://github.com/1sdv/Optimal_LAP_Altitude_for_Maximum_Coverage/blob/main/img/%E6%BC%94%E7%A4%BA.png" alt="应用演示" width="600"/>
 </p>
 
+各端调用图解（详细见文档）：
+<p align="center">
+  <img src="https://github.com/1sdv/Optimal_LAP_Altitude_for_Maximum_Coverage/blob/main/img/1.png" alt="应用演示" width="600"/>
+</p>
+
 
 ## ✨ 特性
 
@@ -210,6 +215,7 @@ console.log(result); // { slope: 0.6, intercept: 2.2 }
 | `/api/statistical` | POST | 统计计算 | `values`, `operation` |
 | `/api/matrix` | POST | 矩阵运算 | `matrix_a`, `matrix_b`, `operation` |
 | `/api/regression` | POST | 线性回归分析 | `x_values`, `y_values` |
+
 
 ## 🤝 贡献
 
